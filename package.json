@@ -1,0 +1,17 @@
+{
+  "name": "b612-dojo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest ./src",
+    "test-watch": "jest --watchAll ./src"
+  },
+  "author": "Xavier NOPRE",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.5.0"
+  }
+}
