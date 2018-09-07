@@ -2,5 +2,12 @@
 
 > Coding-dojo au B612
 
-Séances :
-* [2018-08-28](https://github.com/xnopre/b612-dojo/tree/2018-08-28-tennis) : TDD / Scores de Tennis
+# Séance du 07/09/2018
+
+## Sujet
+
+![Sujet](sujet-kata-price.png)
+
+## TODO
+* Arrondir les prix à 2 décimales
+* Implémenter les réductions
