@@ -2,9 +2,23 @@
 
 > Coding-dojo au B612
 
-Séances :
-* [2018-08-28](https://github.com/xnopre/b612-dojo/tree/2018-08-28-tennis) : TDD / Scores de Tennis
-* [2018-09-07](https://github.com/xnopre/b612-dojo/tree/2018-09-07-price) : TDD / Calcul de prix
-* [2018-09-13](https://github.com/xnopre/b612-dojo/tree/2018-09-13-price) : TDD / Calcul de prix : suite (arrondis + réductions)
-* [2018-10-18](https://github.com/xnopre/b612-dojo/tree/2018-10-18-promises) : TU et promesses
-* [2018-11-19](https://github.com/xnopre/b612-dojo/tree/2018-11-19-mocks) : Mock (SCP, SSH)
+# Séance du 19/11/2018
+
+## Objectif
+
+Etudier les mocks avec Jest.
+
+## Sujet 
+
+Une classe `Script` avec une méthode `deploy("host1")` qui doit faire :
+* Un appel `scp("host1", "config.json")` 
+* Si c'est OK ==> un appel `ssh("host1", "reboot")`
+* Sinon ==> un appel `ssh("host1", "shutdown")`
+
+## TODO (fin de séance)
+
+* Chercher comment s'assurer qu'on mock des méthodes existantes 
+(ex : on mock `scpapy` alors que la méthode est `scp`) et avoir 
+un message d'erreur de Jest (genre "tu mockes une méthode qui n'existe pas")
+* Lister les différentes façons de faire des mocks avec Jest 
+(à implémenter la prochaine fois ?)
