@@ -13,6 +13,14 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "jest": "^23.5.0",
-    "merge": "^1.2.1"
+    "merge": "^1.2.1",
+    "stryker": "^0.33.2",
+    "stryker-api": "^0.22.1",
+    "stryker-html-reporter": "^0.16.10",
+    "stryker-javascript-mutator": "^0.12.2",
+    "stryker-jest-runner": "^1.2.10"
+  },
+  "dependencies": {
+    "stryker-cli": "^0.2.0"
   }
 }
