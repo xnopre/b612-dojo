@@ -2,16 +2,19 @@
 
 > Coding-dojo au B612
 
-## Séances
+# Séance du 17/12/2018
+Calcul de volume.
 
-* [2018-08-28](https://github.com/xnopre/b612-dojo/tree/2018-08-28-tennis) : TDD / Scores de Tennis
-* [2018-09-07](https://github.com/xnopre/b612-dojo/tree/2018-09-07-price) : TDD / Calcul de prix
-* [2018-09-13](https://github.com/xnopre/b612-dojo/tree/2018-09-13-price) : TDD / Calcul de prix : suite (arrondis + réductions)
-* [2018-10-18](https://github.com/xnopre/b612-dojo/tree/2018-10-18-promises) : TU et promesses
-* [2018-11-19](https://github.com/xnopre/b612-dojo/tree/2018-11-19-mocks) : Mock (SCP, SSH)
-* [2018-12-10](https://github.com/xnopre/b612-dojo/tree/2018-12-10-bank) : Kata Bank (account)
-* [2018-12-14](https://github.com/xnopre/b612-dojo/tree/2018-12-14-bank) : Kata Bank (account) suite (création, virement)
+## Objectif
+Travailler le TDD.
 
-## FAQ
+## Sujet -
+### 17/12/2018
 
-[La FAQ collaborative et à compléter est là !](./FAQ.md)
+Sur un tableau simple (indice, valeur), cacluler le potentiel volum entre les creux en prennant en compte le possible écoulement sur les cotés.
+Exemple : ici le volume devra être 2+5=7
+
+            |2|         |2|
+        |1| | |   |1|1|1| |
+        |0| | |0|0|0| | | |
+        -------------------
