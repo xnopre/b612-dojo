@@ -12,6 +12,8 @@
 * [2018-12-10](https://github.com/xnopre/b612-dojo/tree/2018-12-10-bank) : Kata Bank (account)
 * [2018-12-14](https://github.com/xnopre/b612-dojo/tree/2018-12-14-bank) : Kata Bank (account) suite (création, virement)
 * [2018-12-17](https://github.com/xnopre/b612-dojo/tree/2018-12-17-volum) : Kata calcul de volume.
+* [2019-01-10](https://github.com/xnopre/b612-dojo/tree/2019-01-10-price) : TDD / Calcul de prix
+
 ## FAQ
 
 [La FAQ collaborative et à compléter est là !](./FAQ.md)
