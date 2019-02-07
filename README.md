@@ -17,6 +17,7 @@ Session "Meetup" :
 
 * Session \#1 du [2019-01-10](https://github.com/xnopre/b612-dojo/tree/2019-01-10-price) : TDD / Calcul de prix
 * Session \#2 du [2019-01-21](https://github.com/xnopre/b612-dojo/tree/2019-01-21-price) : TDD / Calcul de prix (suite)
+* Session \#3 du [2019-02-07](https://github.com/xnopre/b612-dojo/tree/466d19d0d90aba8a3cdac32ffb93a1ad6cfd6c4f) : TDD / Test Amazon (premier sujet)
 
 ## FAQ
 
