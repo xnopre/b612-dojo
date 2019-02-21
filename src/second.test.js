@@ -36,4 +36,14 @@ describe('Second', () => {
     const pathLen = removeObstable(2, 4, lot)
     expect(pathLen).toBe(3)
   })
+
+  test('should avoid trenches', () => {
+    const lot = [
+      [1, 1, 0, 1 ],
+      [1, 0, 9, 1 ],
+      [1, 1, 1, 1 ]
+    ]
+    const pathLen = removeObstable(2, 4, lot)
+    expect(pathLen).toBe(5)
+  })
 })
