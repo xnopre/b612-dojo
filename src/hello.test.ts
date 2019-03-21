@@ -4,7 +4,7 @@ describe("Hello", () => {
 
     test("should work", () => {
 
-        expect(new Hello().ping()).toBe("pong")
+        expect(new Hello().ping("coucou")).toBe("pong coucou")
 
     })
 

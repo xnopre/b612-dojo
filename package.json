@@ -4,15 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest ./src",
-    "test-watch": "jest --watchAll ./src"
+    "test": "jest",
+    "test-watch": "jest --watchAll"
   },
   "author": "Xavier NOPRE",
   "license": "ISC",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "jest": "^23.5.0",
-    "merge": "^1.2.1"
+    "@types/jest": "^24.0.11",
+    "jest": "^24.5.0",
+    "ts-jest": "^24.0.0",
+    "typescript": "^3.3.4000"
   }
 }
