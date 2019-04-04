@@ -1,4 +1,6 @@
-# Les coding-dojo du B612 : Séance #6 du 21/03/2019
+# Les coding-dojo du B612 : Séance #7 du 04/04/2019
+
+> Suite de : Séance #6 du 21/03/2019
 
 ## Thème
 
