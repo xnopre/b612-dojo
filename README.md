@@ -2,7 +2,7 @@
 
 ## Thème
 
-A la découverte des mocks en Python
+A la découverte des mocks en Python (sans lib de mocks)
 
 ## Sujet
 
