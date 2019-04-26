@@ -1,51 +1,21 @@
-# Les coding-dojo du B612 : Séance #8 du 11/04/2019
+# Les coding-dojo du B612 : Séance #9 du 25/04/2019
 
 ## Thème
 
-A la découverte de Python... en TDD bien sûr (avec le Kata du calcul de prix)
-
-## Remerciements
-
-Merci à Maxime Janvier pour l'animation de cette session et pour 
-avoir fournit un [squelette de projet](https://github.com/mjanv/python-kata).
+A la découverte des mocks en Python
 
 ## Sujet
 
-> Calcul de prix
+Pour s'exercer sur les mocks, nous avons collectivement imaginé le cas suivant :
+une classe `Processor` qui a une méthode `doit` qui récupère une liste de données
+en base de données et les envois (par exemple via le réseau) vers un équipement 
+distant.
 
-Voir le [descriptif de la session #1](https://github.com/xnopre/b612-dojo/tree/2019-01-10-price).
+Architecture :
+* Un collaborateur `Dao` qui a une méthode `get_all` et renvoie un tableau de données
+* Un collaborateur `Connector` qui a une méthode `send`
+* Une classe  `Processor` qui a une méthode `doit
 
-## Installation
+## Installation et Run Python
 
-Le mieux est d'installer un `virtualenv`.
-
-Il faut avoir au moins une version de Python/Python3 installée. 
-```
-pip3 install -r requirements.txt
-virtualenv py3
-source py3/bin/activate
-pip install -r requirements.txt
-```
-
-## Run
-
-Pour lancer les tests unitaires (méthode classique) :
-```
-pytest
-```
-Pour lancer en mode watch :
-```
-ptw
-```
-Pour générer le coverage :
-```
-pytest kata --cov-report xml:cov.xml --cov kata
-```
-et avec le coverage et le mode watch :
-```
-ptw -- kata --cov-report xml:cov.xml --cov kata # Watch mode + Coverage support
-```
-
-## VSCode extensions
-* [Coverage Gutters](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters)
-* [Python Test Explorer](https://marketplace.visualstudio.com/items?itemName=LittleFoxTeam.vscode-python-test-adapter)
+Voir session #8.
