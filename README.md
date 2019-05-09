@@ -21,8 +21,9 @@ Session "Meetup" :
 * Session \#4 et \#5 du [2019-02-21&03-07](https://github.com/xnopre/b612-dojo/tree/2019-02-21%2603-07-shortest-path) : TDD / Test Amazon (second sujet - chemin le plus court)
 * Session \#6 du [2019-03-21](https://github.com/xnopre/b612-dojo/tree/2019-03-21-tennis) : TDD et calcu des points de tennis
 * Session \#7 du [2019-04-04](https://github.com/xnopre/b612-dojo/tree/2019-04-04-tennis) : TDD et calcu des points de tennis (suite)
-* Session \#8 du [2019-11-04](https://github.com/xnopre/b612-dojo/tree/2019-04-11-python-price) : A la découverte de Python et calcul de prix
-* Session \#9 du [2019-11-25](https://github.com/xnopre/b612-dojo/tree/2019-04-25-python-mock) : A la découverte des mocks en Python (sans lib de mock)
+* Session \#8 du [2019-04-11](https://github.com/xnopre/b612-dojo/tree/2019-04-11-python-price) : A la découverte de Python et calcul de prix
+* Session \#9 du [2019-04-25](https://github.com/xnopre/b612-dojo/tree/2019-04-25-python-mock) : A la découverte des mocks en Python (sans lib de mock)
+* Session \#10 du [2019-05-09](https://github.com/xnopre/b612-dojo/tree/2019-05-09-python-mock-lib) : A la découverte des mocks en Python avec la lib `unittest`.
 
 ## FAQ
 
