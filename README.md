@@ -14,7 +14,7 @@ distant.
 Architecture :
 * Un collaborateur `Dao` qui a une méthode `get_all` et renvoie un tableau de données
 * Un collaborateur `Connector` qui a une méthode `send`
-* Une classe  `Processor` qui a une méthode `doit
+* Une classe  `Processor` qui a une méthode `doit`
 
 ## Installation et Run Python
 
