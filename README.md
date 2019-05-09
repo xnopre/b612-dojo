@@ -1,21 +1,14 @@
-# Les coding-dojo du B612 : Séance #9 du 25/04/2019
+# Les coding-dojo du B612 : Séance #10 du 09/05/2019
 
 ## Thème
 
-A la découverte des mocks en Python (sans lib de mocks)
+Exploration des mocks en Python avec la lib `unittest`. 
 
 ## Sujet
 
-Pour s'exercer sur les mocks, nous avons collectivement imaginé le cas suivant :
-une classe `Processor` qui a une méthode `doit` qui récupère une liste de données
-en base de données et les envois (par exemple via le réseau) vers un équipement 
-distant.
+Nous reprenons le code de la session précédent [#9](https://github.com/xnopre/b612-dojo/tree/2019-04-25-python-mock)
+en le refactorant pour utiliser la librairie de mock de `unittest`.
 
-Architecture :
-* Un collaborateur `Dao` qui a une méthode `get_all` et renvoie un tableau de données
-* Un collaborateur `Connector` qui a une méthode `send`
-* Une classe  `Processor` qui a une méthode `doit`
+Merci à [Maxime Janvier](https://gist.github.com/mjanv) pour les informations
+reprises dans le fichier [documentation_mocks.py](./documentation_mocks.py).
 
-## Installation et Run Python
-
-Voir session #8.

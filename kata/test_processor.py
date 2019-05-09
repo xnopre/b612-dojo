@@ -1,54 +1,46 @@
+from unittest.mock import Mock
+
 import pytest
 
+from .connector import Connector
 from .processor import Processor, NoNetworkException
 
-class MockDao:
-    def __init__(self, data_to_return_for_get_all):
-        self.data_to_return_for_get_all=data_to_return_for_get_all
+@pytest.fixture
+def dao():
+    return Mock()
 
-    def get_all(self):
-        return self.data_to_return_for_get_all
 
-class MockConnector:
-    def __init__(self, raise_error=False):
-        self.counter = 0
-        self.data= ""
-        self.raise_error = raise_error
+@pytest.fixture
+def connector():
+    return Mock(spec=Connector)
 
-    def send(self, data):
-        if self.raise_error:
-            raise Exception('dsgfhjsqdghjqbdsjhgbjshdf')
 
-        self.counter += 1
-        self.data = data
+@pytest.fixture
+def processor(dao, connector):
+    return Processor(dao, connector)
 
-def test_should_call_collaborators():
-    dao = MockDao(data_to_return_for_get_all=['abc'])
-    connector = MockConnector()
-    processor = Processor(dao, connector)
+
+def test_should_call_collaborators(processor, dao, connector):
+    dao.get_all.return_value = ['abc']
 
     processor.doit()
 
-    assert connector.counter == 1
-    assert connector.data == ['abc']
+    connector.send.assert_called_once_with(['abc'])
+    assert connector.send.called
+    assert connector.send.call_count == 1
 
-def test_do_not_send_data():
-    dao = MockDao(data_to_return_for_get_all=[])
-    connector = MockConnector()
-    processor = Processor(dao, connector)
+
+def test_do_not_send_data_if_get_list_empty(processor, dao, connector):
+    dao.get_all.return_value = []
 
     processor.doit()
 
-    assert connector.counter == 0
+    assert not connector.send.called
 
-def test_should_raise_exception_if_error_sending():
-    dao = MockDao(data_to_return_for_get_all=['def'])
-    connector = MockConnector(raise_error=True)
-    processor = Processor(dao, connector)
+
+def test_should_raise_exception_if_error_sending(processor, dao, connector):
+    connector.send.side_effect = Exception
+    dao.get_all.return_value = ['def']
 
     with pytest.raises(NoNetworkException):
         processor.doit()
-
-
-
-

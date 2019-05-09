@@ -1,6 +1,10 @@
 class NoNetworkException(Exception):
     pass
 
+    def send(self):
+        return 42
+
+
 class Processor:
     def __init__(self, dao, connector):
         self.dao = dao
