@@ -24,6 +24,7 @@ Session "Meetup" :
 * Session \#8 du [2019-04-11](https://github.com/xnopre/b612-dojo/tree/2019-04-11-python-price) : A la découverte de Python et calcul de prix
 * Session \#9 du [2019-04-25](https://github.com/xnopre/b612-dojo/tree/2019-04-25-python-mock) : A la découverte des mocks en Python (sans lib de mock)
 * Session \#10 du [2019-05-09](https://github.com/xnopre/b612-dojo/tree/2019-05-09-python-mock-lib) : A la découverte des mocks en Python avec la lib `unittest`.
+* Session \#11 du [2019-06-06](https://github.com/xnopre/b612-dojo/tree/2019-06-06-gilded-rose) : Ajouts de TU sur du code Legacy (GildedRose Kata)
 
 ## FAQ
 
